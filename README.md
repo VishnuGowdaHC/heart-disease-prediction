@@ -15,16 +15,3 @@ A machine learning project to predict the likelihood of heart disease based on p
 5. Evaluate with accuracy, precision, recall, F1-score
 6. Deploy best model
 
-## Example (Python)
-```python
-from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import accuracy_score
-
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
-
-model = RandomForestClassifier()
-model.fit(X_train, y_train)
-
-print("Accuracy:", accuracy_score(y_test, model.predict(X_test)))
-# heart-disease-prediction
