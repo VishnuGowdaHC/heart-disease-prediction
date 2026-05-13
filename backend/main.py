@@ -14,7 +14,6 @@ app = FastAPI(
     version="1.0.0"
 )
 
-# Crucial: Configure CORS so your Vite/React frontend can talk to this API
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:5173", "http://127.0.0.1:5173", "https://heart-disease-prediction-1-9u7r.onrender.com/"],
