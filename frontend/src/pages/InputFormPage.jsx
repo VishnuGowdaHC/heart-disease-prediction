@@ -35,7 +35,7 @@ const InputFormPage = () => {
   const handleAnalyze = async () => {
     setLoading(true);
     try {
-      const response = await axios.post('http://localhost:8000/predict', formData);
+      const response = await axios.post('https://heart-disease-prediction-p9vb.onrender.com/predict', formData);
       console.log("XGBoost Inference Complete:", response.data);
       
       // Navigate to the results page with the data!
